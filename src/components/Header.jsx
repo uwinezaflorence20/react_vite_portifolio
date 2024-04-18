@@ -1,9 +1,12 @@
 import React from 'react'
+import Home from './Home'
+import { FaHome } from "react-icons/fa";
+import { FcAbout } from "react-icons/fc";
 
 const Header = () => {
   return (
     <header class="bg-black">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
     <div class="flex h-16 items-center justify-between">
       <div class="md:flex md:items-center md:gap-12">
         <a class="block  bg-[#fb153b]" href="#">
@@ -20,24 +23,30 @@ const Header = () => {
       <div className="hidden md:block ">
         <nav aria-label="Global">
           <ul class="flex items-center gap-10">
+        
             <li>
-              <a class=" text-white transition hover:text-[#d76f6f]  bg-[#fb153b] rounded-sm p-1" href="#"> Home</a>
+              <a class=" text-white transition hover:text-[#d76f6f] bg-[#fb153b] rounded-md    p-1" href="/"> Home</a>
             </li>
-
             <li>
               <a class=" text-white transition   hover:text-[#fb153b]" href="AboutMe"> About</a>
             </li>
 
             <li>
-              <a class=" text-white transition   hover:text-[#fb153b]" href="#"> Services </a>
+              <a class=" text-white transition   hover:text-[#fb153b]" href="Services"> Services </a>
             </li>
 
             <li>
-              <a class=" text-white transition   hover:text-[#fb153b]"  href="#"> Projects </a>
+              <a class=" text-white transition   hover:text-[#fb153b]"  href="Projects"> Projects </a>
+            </li>
+            <li>
+              <a class=" text-white transition   hover:text-[#fb153b]"  href="Skill"> skill </a>
             </li>
 
             <li>
-              <a class=" text-white transition   hover:text-[#fb153b]" href="#"> Blog </a>
+              <a class=" text-white transition   hover:text-[#fb153b]" href="Contact"> Contact </a>
+            </li>
+            <li>
+              <a class=" text-white transition   hover:text-[#fb153b]" href="Testimonies"> Testimonies </a>
             </li>
           </ul>
         </nav>
@@ -71,7 +80,9 @@ const Header = () => {
       </div>
     </div>
   </div>
+
 </header>
+
   )
 }
 
